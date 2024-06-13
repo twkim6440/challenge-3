@@ -1,0 +1,799 @@
+body {
+    /* display: flex; */
+    background-color: rgb(176, 200, 245);
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #213b88;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: rgb(238, 238, 244);
+}
+.headerAside {
+    flex:40%;
+}
+.myPhoto {
+    position: absolute;
+    top: 0px;
+    left: 90px;
+}
+.myName {
+    flex: 30%;
+    min-width: 180px;
+    margin-top: 60px; 
+    margin-left: 250px;
+    font-size: 200%;
+    text-align: center;
+    color:  rgb(238, 239, 243);
+}
+h1::after {
+    font-family: Verdana, Impact ;
+    content: '   (TK)';
+    color: #14c452;
+    margin-left: 5px;
+}
+
+/* @media screen and (max-width: 700px) {
+    .myPhoto, .myName {
+      flex-direction: column;
+    }
+    div {
+        order: 2;
+    }
+} */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    flex: 70%;
+    padding-top: 100px;
+    padding-right: 40px;
+    overflow: hidden;
+    /* background-color: #3d9373; */
+
+    /* display: flex; */
+    /* align-items: flex-end; */
+    align-content: baseline;
+    justify-content: right;
+
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f7f9f9;
+    /* text-align: center; */
+    /* padding: 14px 26px; */
+    padding: 6px 6px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: transparent;
+    color: rgb(68, 224, 151);
+  }
+  
+.work {
+    background-color: lightblue;
+    /* padding: 20px; */
+}
+#workPointer {
+    /* border: 1px solid gray; */
+}
+.contactMe {
+    background-color: lightblue;
+    /* padding: 20px; */
+}
+#contactMePointer {
+    /* border: 1px solid gray; */
+}
+.resume {
+    background-color: lightblue;
+    /* padding: 20px; */
+}
+#resumePointer {
+    /* border: 1px solid gray; */
+}
+.aboutMe {
+    background-color: lightblue;
+    /* padding: 20px; */
+}
+#aboutMePointer {
+    /* border: 1px solid gray; */
+}
+
+
+
+/* *** Testing ***  */
+.code-card:hover
+{
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+.code-card pre {
+  /* set styles to make it so code wraps in <pre> instead of overflowing */
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--gin);
+  border-radius: 8px;
+  /* use linear-gradient() function to create a fading background  */
+  background-image: linear-gradient(
+    rgba(102, 236, 144, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* .topnav {
+    flex: 50%;
+    margin-top: 60px; 
+    margin-left: 200px; 
+    margin-right: 100px; 
+    align-items:center;
+}
+ul {
+    display: flex;
+}
+li {
+    flex: 10%;
+    color: rgb(172, 22, 22);
+} */
+/* .header .links button::before, .links button::after {
+    content: '.   .   .';
+    color: white;
+} */
+
+.logo {
+    width: 100%;
+    height: 150px;
+}
+.container {
+    position: relative;
+}
+.logo_background {
+    position: absolute;
+    opacity: 0.8;
+}
+.logo_image {
+    position:absolute;
+    top: 50px;
+    left: 50px;
+    /* align-content: center; */
+} 
+
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;}
+
+
+
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex:; */
+    width: 100%;
+    height: 160px;
+
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+
+    color: blue;
+}
+.aboutMeTitle {
+    flex: 20%;
+    padding:30px;
+    padding-left: 50px;
+    justify-content:center;
+    background-color: #2a2fcbdc;
+    color:#e5eee6;
+    text-align:center;
+    font-size:x-large;
+}
+.aboutMeContent {
+    flex: 80%;
+    width: 100%;
+    display: flex;
+    color: black;
+    text-align:left;
+    font-size:x-large;
+}
+.aboutMeContentLeft {
+    flex: 50%;
+    padding: 5px;
+    padding-left: 50px;
+    background-color: #9abef0dc;
+}
+.aboutMeContentRight {
+    flex: 50%;
+    padding-top: 0px;
+    padding-left: 50px;
+    background-color: #8daedadc;
+}
+.aboutMeContent ol{
+    padding-top: 10px;
+    list-style-type: disc;
+    text-align: left;
+}
+
+.aboutMeContent li {
+    padding: 10px;
+    text-align: left;
+    color: rgb(14, 8, 47);
+}
+
+ 
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    background-color: hsl(241, 46%, 50%);  
+    color: blue;
+}
+.workTitle {
+    flex: 20%;
+    padding: 30px;
+    justify-content: flex-start;
+    color: white;
+    text-align:center;
+    font-size:x-large;
+}
+.workContent {
+    flex: 80%;
+    justify-content: flex-start;
+}
+
+.korea {
+    display: flex;
+    background-color: #83b28a;    
+    width: 100%;
+    height: 300px;
+    text-align:center;
+}
+.pictureKorea {
+    padding-left: 50px;
+    flex: 30%;
+}
+.paraKorea {
+    padding-top: 0px;
+    flex: 70%;
+}
+
+.korea .paraKorea h2::after {
+    font-family: Impact;
+    font-size: xx-large;
+    content: 'Korea';
+    color: #243e8b;
+}
+.paraKoreaHeader {
+    padding-top: 50px;
+}
+.paraKoreaContents {
+    padding: 30px;
+    color: black;
+}
+
+
+
+
+.workSecondRow {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #8d9bf8;
+}
+
+.music {
+    flex: 50%;
+    width: 100%;
+    /* height: 500px; */
+    text-align:center;
+    /* margin-top: 0px; */
+}
+.pictureMusic {
+    padding-left: 5px;
+    /* flex: 30%; */
+
+}
+.paraMusic {
+    flex: 50%;
+    padding-top: 60px;
+}
+.paraMusicHeader {
+    text-align:center;
+}
+.paraMusicHeader::after {
+    font-family: Impact;
+    font-size: xx-large;
+    content: 'Music';
+    color: #243e8b;
+}
+.paraMusicContents {
+    /* padding: 30px; */
+    color: black;
+}
+
+.calligraphy {
+    flex: 50%;
+    /* width: 50%; */
+    text-align:center;
+    background-color: #7979f3;
+}
+.pictureCalligraphy {
+    padding-left: 5px;
+    /* flex: 30%; */
+}
+.paraCalligraphy {
+    padding-left: 40px;
+}
+.paraCalligraphyHeader::after {
+    font-family: Impact;
+    font-size: xx-large;
+    content: 'Calligraphy';
+    color: #243e8b;
+}
+.paraCalligraphyHeader {
+    padding-top: 60px;
+}
+.paraCalligraphyContents {
+    padding-top: 0px;
+}
+/* .calligraphy p {
+    color: black;
+    padding: 30px;
+    padding-left: 30px;
+}
+ */
+
+
+.workThirdRow {
+    width: 100%;
+    /* height: 785px; */
+    display: flex;
+    background-color: #d79991;
+}
+
+.cleopatra {
+    width: 50%;
+    padding-bottom: 50px;
+    text-align:center;
+}
+.pictureCleopatra {
+    padding-left: 5px;
+    /* flex: 30%; */
+}
+.paraCleopatra {
+    flex: 50%;
+    padding-top: 60px;
+}
+.paraCleopatraHeader {
+    text-align:center;
+}
+.paraCleopatraHeader::after {
+    font-family: Impact;
+    font-size: xx-large;
+    content: 'Cleopatra Salt';
+    color: #243e8b;
+}
+.paraCleopatraContents {
+    padding: 0px;
+    color: black;
+}
+
+
+.bucketlist {
+    width: 50%;
+    margin-top: 0px;
+    text-align:center;
+    background-color: #dc5b4a;
+}
+.pictureBucketlist {
+    padding-left: 5px;
+    /* flex: 30%; */
+}
+.paraBucketlist {
+    padding-top: 60px;
+}
+.paraBucketlistHeader::after {
+    font-family: Impact;
+    font-size: xx-large;
+    content: 'Bucketlist';
+    color: #243e8b;
+}
+.paraCleopatraContents {
+    padding: 0px;
+    color: black;
+}
+
+.contactMe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 150px; */
+    padding-top: 0px;
+    /* margin-top: 250px; */
+    color: blue;
+    background-color: #377148;
+    /* margin-top: 25px; */
+}
+.contactMeAside {
+    flex: 20%;
+    padding:40px;
+    padding-left: 50px;
+    height: 150px;
+    justify-content:center;
+    background-color: #292ed3dc;
+    color:#e5eee6;
+    text-align:center;
+    font-size:x-large;
+}
+.contactMeList {
+    flex: 80%;
+    padding-top: 20px;
+    padding-right: 40px;
+    overflow: hidden;
+    /* background-color: #3d9373; */
+
+    /* display: flex; */
+    /* align-items: flex-end; */
+    align-content: baseline;
+    justify-content: right;
+
+  }
+  
+  /* Style the topnav links */
+  .contactMeList a {
+    float: right;
+    display: block;
+    color: #dbd8e6;
+    align-content:center;
+    /* text-align: center; */
+    padding: 10px 25px;
+    /* text-decoration: none; */
+    font-size: x-large;
+  }
+  
+  /* Change color on hover */
+  .contactMeList a:hover {
+    background-color: transparent;
+    color: rgb(224, 194, 150);
+  }
+  
+
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+
+    .topnav {
+        padding-top: 15px;
+        text-align: end;
+        padding-right: 20px;
+    }
+    .topnav a {
+        /* float: none; */
+        width: 100%;
+    }
+  
+    .aboutMe {
+        /* flex; */
+        /* width: 100%; */
+        height: 100%;
+    }
+    .aboutMeTitle {
+        /* flex: 0 0 400px; */
+        text-align:center;
+    }
+    .aboutMeContent {
+        /* flex: 0 0 400px; */
+        width: 100%;
+        height: 100%;
+        font-size: medium;
+
+        /* .aboutMeContentRight 2; */
+    }
+
+    .work {
+        display: flex;
+        /* min-height: 150vh; */
+        /* overflow: scroll; */
+        /* height: auto; */
+        /* width:100%; */
+        height: auto;
+    }
+    .workTitle {
+        flex: 20%;
+        /* height: 1200px; */
+        text-align:center;
+    }
+    .workContent {
+        flex: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        /* width: 100%; */
+        /* .aboutMeContentRight 2; */
+    }
+
+    .korea {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: auto
+    }
+    .pictureKorea {
+        /* flex; */
+        justify-content: center;
+        padding-left: 1px;
+    }
+    .paraKorea {
+        flex: 100%;
+        text-align: center;
+    }
+    .paraKoreaHeader {
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+    .workSecondRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: 40%;
+    }
+    .music {
+        flex: 50%;
+        display: flex;
+        text-align: center;
+    }
+    .pictureMusic {
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraMusic {
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraMusicHeader {
+        padding: 30px;
+    }
+    .paraMusicContents {
+        padding: 10px;
+    }
+
+    .calligraphy {
+        flex: 50%;
+        display: flex;
+        text-align: center;
+    }
+    .pictureCalligraphy{
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraCalligraphy{
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraCalligraphyHeader {
+        padding: 30px;
+    }
+    .paraCalligraphyContents {
+        padding: 10px;
+    }
+
+
+    .workThirdRow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: 40%;
+    }
+
+
+    .cleopatra {
+        /* flex: 50%; */
+        /* height: 50%; */
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+    .pictureCleopatra {
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraCleopatra {
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraCleopatraHeader {
+        /* padding-top: 50px; */
+        padding: 30px;
+    }
+    .paraCleopatraContents {
+        padding: 10px;
+    }
+
+    .bucketlist {
+        width: 100%;
+        margin-bottom: 165px;
+        display: flex;
+        text-align: center;
+        padding-bottom: 55px;
+    }
+    .pictureBucketlist{
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraBucketlist{
+        flex: 50%;
+        padding: 1px;
+    }
+    .paraBucketlistHeader {
+        /* padding-top: 50px; */
+        padding: 30px;
+    }
+    .paraBucketlistContents {
+        padding: 10px;
+        /* padding-bottom: 80px; */
+    }
+
+    .contactMe {
+        /* flex; */
+        /* height: 100px; */
+        /* padding-top: 300px; */
+    }
+    .contactMeAside {
+        text-align:center;
+        padding-top: 100px;
+
+    }
+    .contactMeList {
+        color: black;
+    }
+
+    .bottomnav {
+        padding-top: 15px;
+    }
+    .bottomnav a {
+        float: none;
+        width: 100%;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+/* .contactMe {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.contactMeTitle {
+    flex: 20%;
+    padding: 25px;
+    background-color: #2d458d;
+    color:#e5eee6;
+    text-align:center;
+    font-size:x-large;
+}
+.contactMeContent {
+    flex: 80%;
+    justify-content: flex-end;
+    margin-top: 35px; 
+    font-weight: bolder;
+}
+.contactMeList {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    flex: 20%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 120%;
+    color:  rgb(8, 19, 76);
+}
+ */
+.float-right {
+    float: right;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+.float-left {
+    float: left;
+    margin-left: 40px;
+    margin-top: 35px;  
+}
+.float-none {
+    float:none;
+    margin-top: 35px;  
+}
+
+#css-tooltip:hover::after {
+    content: "A message which appears when a cursor is positioned over an icon, image, hyperlink, or other element in a graphical user interface";
+    position: absolute;
+    left: 0px;
+    bottom: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    background-color: #772014;
+    padding: 12px;
+    color: #fff;
+    font-size: 80%;
+    z-index: 1;
+  }
+
+.resume {
+    background-color: #4ec672;
+}
+
+/*
+ *** Use an attribute selector to select all <a> elements that have an href value that ends with '.css'  *****
+a[href$='.css']::after {
+    content: '📝';
+    display: inline-block;
+    margin-left: 3px;
+  }
+*** create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS ***
+:root {
+*** --dark: #13293d;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+  }
+  
+  header {
+    *** use CSS var() function to reference a variable created above ***
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+**** Create CSS variables at the root of the document to be used throughout the style sheet ***
+:root {
+    --white: #fff;
+    --dark-blue: #13293d;
+   *** You can use it with any value that is repeated throughout the sheet ***
+    --border-radius: 50px;
+  }
+  
+.products {
+  flex: 1;
+  background-color: var(--white);
+}
+
+.card {
+  border-radius: var(--border-radius);
+}
+
+.card > header {
+  *** This is the same as `border-radius: 50px 50px 0 0 ***
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+*/  

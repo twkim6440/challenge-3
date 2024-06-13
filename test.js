@@ -170,3 +170,54 @@ const trackEmployeeData = function() {
 
 // Add event listener to 'Add Employees' button
 addEmployeesBtn.addEventListener('click', trackEmployeeData);
+
+
+
+
+// Arrays are index based
+// Objects are key-value based
+
+let arrayData = [123, 33.45, 'adam', true, [], {}]
+
+let objectData = {
+    intData: 123,
+    floatData: 33.45,
+    stringData: 'adam',
+    arrayData: [],
+    objData: {
+        age: 27
+    }
+}
+
+// Array
+// 
+
+// DOT NOTATIONS
+// SYNTAX --> variable_name.key_name. objectData.intData
+// Initial Array - []
+
+// After getting the first emplyees details and using .push method
+// [
+//     {
+//         firstName: 'Jack',
+//         lastName: 'Ma',
+//         salary: 3000
+//     }
+// ]
+
+
+// After getting the second emplyees details and using .push method again
+// [
+//     {
+//         firstName: 'Jack',
+//         lastName: 'Ma',
+//         salary: 3000
+//     },
+//     {
+//         firstName: 'Jack',
+//         lastName: 'Ma',
+//         salary: 3000
+//     }
+// ]
+
+// array.push()
