@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Implemented first with Array of Arrays, and I had to do it over again with Array of Objects  -->
+    <!-- <script src="ArrayOfArrayVersion.js"></script> -->
+
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Above tag is to control the layout on mobile browsers and ensure that the webpage is displayed correctly 
+       on various devices with different screen sizes.
+       Here's what each part of the tag means:
+       width=device-width: This setting tells the browser to set the width of the viewport to the width of the device's screen. 
+       This ensures that the webpage content will adjust to the screen size of the device, making it responsive.
+       initial-scale=1.0: This setting specifies the initial zoom level when the page is first loaded. 
+       A value of 1.0 means that the page will be displayed at 100% zoom level, without any initial scaling applied.. -->
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+       <!-- Above tag is to specify the document mode and browser compatibility settings for Internet Explorer.
+       In this specific case, the content="ie=edge" value tells Internet Explorer to 
+       use the latest rendering engine available, regardless of the version of IE being used. 
+       This is often used to ensure that the webpage is displayed correctly and consistently 
+       across different versions of Internet Explorer. -->
+
+  <title>Employee Payroll Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Employee Payroll Tracker</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+       <h2>Employee Roster</h2>
+      </div>
+      <div class="card-body">
+       <table>   <!-- The <table> element in HTML is used to create a table to display tabular data on a webpage. 
+                      It is one of the fundamental elements for structuring and organizing data in a tabular format.
+                      When you use the <table> element, you can define rows and columns within the table using additional elements 
+                      such as <tr> for table rows, <th> for table headers, and <td> for table data cells.
+                      Here are some key points about the <table> element:
+                      It serves as the container for the entire table structure.
+                      You can include other table-related elements like <thead>, <tbody>, and <tfoot> within the <table> element 
+                      to further organize the table content. By using attributes like border, cellpadding, cellspacing, and width, 
+                      you can control the appearance and layout of the table.
+                      Overall, the <table> element is essential for creating structured and visually appealing tables 
+                      to present data in a clear and organized manner on web pages-->
+
+        <thead>    <!-- The <thead> element in HTML is used to define the header section of a table. 
+                        It is typically used to group together the header rows of a table 
+                        to differentiate them from the rest of the table content.
+                        The <thead> element is often used in conjunction with the <th> element, 
+                        which is used to define header cells within a table. 
+                        By wrapping header rows with the <thead> element, you can indicate to the browser 
+                        that these rows contain header information for the table. -->
+
+          <tr>       <!-- The <tr> element in HTML is used to define a row within a table. 
+                          It stands for "table row." 
+                          Each <tr> element typically contains one or more table cells (<td> or <th> elements) 
+                          that represent the individual cells within that row.
+                          By using the <tr> element, you can structure your table data into rows, 
+                          making it easier to organize and present tabular information. Each <tr> element creates a new row in the table, 
+                          and you can have multiple <tr> elements within a <table> element to represent different rows of data.
+                          When you use <tr> elements in conjunction with <td> (table data) or <th> (table header) elements, 
+                          you can create structured and organized tables that display data in a clear and readable format.-->
+
+            <th>First Name</th>   <!-- The <th> element in HTML is used to define header cells within a table. It stands for "table header." 
+                                       Unlike regular data cells defined with the <td> element, cells defined with <th> are typically used 
+                                       to represent header information for a row or column in the table.
+                                       The <th> element is commonly used within the <thead> section of a table to define header cells for columns or rows. 
+                                       By using <th> elements, you can visually distinguish header cells from regular data cells in a table,
+                                       making it easier for users to identify and understand the structure of the table.
+                                       When you use <th> elements, browsers typically render the text in bold and center it within the cell by default, 
+                                       helping to visually differentiate the header cells from the rest of the table content.-->
+
+            <th>Last Name</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody id="employee-table">
+          </tbody>
+       </table>
+      </div>
+      <div class="card-footer">
+        <button id="add-employees-btn" class="btn">Add Employees</button>
+                <!-- The <button> element in HTML is used to create a clickable button on a webpage. 
+                     It allows users to interact with the webpage by triggering actions or events when clicked.
+                     Here are some key points about the <button> element:
+                     It can contain text, images, or other HTML elements.
+                     It is commonly used for form submission, triggering JavaScript functions, or navigating to another page.
+                     You can style <button> elements using CSS to customize their appearance, such as changing colors, fonts, and sizes.
+                     The <button> element is often used in conjunction with JavaScript to handle user interactions and perform dynamic actions on the webpage.
+                     Overall, the <button> element is a versatile and essential component for creating interactive elements on web pages, 
+                     allowing users to engage with the content and perform various actions with a simple click.-->
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
